@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align itens</title>
+    <style>
+        .container {
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+        }
+        .container2 {
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+            flex-direction: column;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .center {
+            align-items: center;
+        }
+        .stretch {
+            align-items: stretch;
+            
+        }
+        .flex-start {
+            align-items: flex-start;
+        }
+        .flex-end {
+            align-items: flex-end;
+        }
+        .baseline {
+            align-items: baseline;
+        }
+        .central {
+            height: 300px;
+            justify-content: center;
+        }
+        .central .item {
+            flex: 0;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+
+    <h3>center</h3>
+    <section class="container center">
+
+        <div class="item">item 1</div>
+        <div class="item">Apenas um mero e teste.</div>
+        <div class="item">item 3</div>
+
+    </section>
+
+    <h3>stretch</h3>
+    <section class="container stretch">
+
+        <div class="item">item 1</div>
+        <div class="item">Apenas um mero teste.</div>
+        <div class="item">item 3</div>
+
+    </section>
+
+    <h3>flex-start</h3>
+    <section class="container flex-start">
+
+        <div class="item">1</div>
+        <div class="item">Apenas um mero teste.</div>
+        <div class="item">3 once again, this is just a test, so i can understand what i want</div>
+    </section>
+
+    <h3>flex-end</h3>
+    <section class="container flex-end">
+
+        <div class="item">1</div>
+        <div class="item">Apenas um mero teste.</div>
+        <div class="item">3 once again, this is just a test, so i can understand what i want</div>
+    </section>
+
+    <h3>baseline</h3>
+    <section class="container baseline">
+
+        <div class="item"><br>1</div>
+        <div class="item">Apenas um mero teste.</div>
+        <div class="item">3 once again, this is just a test, so i can understand what i want</div>
+    </section>
+    <h1>COLUMN</h1>
+    <h3>center</h3>
+    <section class="container2 center">
+
+        <div class="item">item 1</div>
+        <div class="item">Apenas um mero e teste.</div>
+        <div class="item">item 3</div>
+
+    </section>
+
+    <h3>stretch</h3>
+    <section class="container2 stretch">
+
+        <div class="item">item 1</div>
+        <div class="item">Apenas um mero teste.</div>
+        <div class="item">item 3</div>
+
+    </section>
+
+    <h3>flex-start</h3>
+    <section class="container2 flex-start">
+
+        <div class="item">1</div>
+        <div class="item">Apenas um mero teste.</div>
+        <div class="item">3 once again, this is just a test, so i can understand what i want</div>
+    </section>
+
+    <h3>flex-end</h3>
+    <section class="container2 flex-end">
+
+        <div class="item">1</div>
+        <div class="item">Apenas um mero teste.</div>
+        <div class="item">3 once again, this is just a test, so i can understand what i want</div>
+    </section>
+
+    <h3>baseline</h3>
+    <section class="container2 baseline">
+
+        <div class="item"><br>1</div>
+        <div class="item">Apenas um mero teste.</div>
+        <div class="item">3 once again, this is just a test, so i can understand what i want</div>
+    </section>
+
+    <h3>Alinhamento central à tela</h3>
+    <section class="container central center">
+        <div class="item">Apenas um texto qualquer para exemplificar algum teste que estou fazendo no momento em css.</div>
+    </section>
+</body>
+</html>

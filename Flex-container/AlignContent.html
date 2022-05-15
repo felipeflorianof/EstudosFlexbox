@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align content</title>
+    <style>
+      
+        .container {
+            height: 400px;
+            max-width: 300px;
+           
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item {
+            background-color: blueviolet;
+            padding: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            margin: 3px;
+        }
+
+        .center {
+            align-content: center;
+        }
+        .flexstart {
+            align-content: flex-start;
+        }
+        .flexend {
+            align-content: flex-end;
+        }
+        .spacearound {
+            align-content: space-around;
+        }
+        .spacebetween {
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Stretch</h3>
+    <div class="container">
+        <div class="item">Observo a noite fria e chuvosa, até parece confortável por um momentoa</div>
+        <div class="item">Mais uma noite como todas as anteriores.</div>
+        <div class="item">Penso em você, mesmo sabendo o quão longe está de mim</div>
+        <div class="item">Como queria tu aqui</div>
+        <div class="item">10 minutos refletindo</div>
+        <div class="item">Futilidade</div>
+        <div class="item">Ela não precisa se esforçar para ter a minha atenção</div>
+        <div class="item">Ela precisa se esforçar</div>
+        <div class="item">Ela precisa se esforçar</div>
+    </div>
+
+
+    <h3>center</h3>
+    <div class="container center">
+        <div class="item">Observo a noite fria e chuvosa, até parece confortávela</div>
+        <div class="item">Mais uma noite como todas as anteriores.</div>
+        <div class="item">Penso em você, mesmo sabendo o quão longe está de mim.</div>
+        <div class="item">Como queria tu aqui</div>
+        <div class="item">10 minutos refletindo</div>
+        <div class="item">Futilidade</div>
+        <div class="item">Ela não precisa</div>
+        <div class="item">Ela não precisa</div>
+
+
+    </div>
+
+
+    <h3>flex start</h3>
+    <div class="container flexstart">
+        <div class="item">Observo a noite fria e chuvosa, até parece confortávela</div>
+        <div class="item">Mais uma noite como todas as anteriores.</div>
+        <div class="item">Penso em você, mesmo sabendo o quão longe está de mim.</div>
+        <div class="item">Como queria tu aqui</div>
+        <div class="item">10 minutos refletindo</div>
+        <div class="item">Futilidade</div>
+        <div class="item">Ela não precisa</div>
+        <div class="item">Ela não precisa</div>
+
+
+    </div>
+
+    <h3>flex end</h3>
+    <div class="container flexend">
+        <div class="item">Observo a noite fria e chuvosa, até parece confortávela</div>
+        <div class="item">Mais uma noite como todas as anteriores.</div>
+        <div class="item">Penso em você, mesmo sabendo o quão longe está de mim.</div>
+        <div class="item">Como queria tu aqui</div>
+        <div class="item">10 minutos refletindo</div>
+        <div class="item">Futilidade</div>
+        <div class="item">Ela não precisa</div>
+        <div class="item">Ela não precisa</div>
+
+
+    </div>
+
+    <h3>space around</h3>
+    <div class="container spacearound">
+        <div class="item">Observo a noite fria e chuvosa, até parece confortávela</div>
+        <div class="item">Mais uma noite como todas as anteriores.</div>
+        <div class="item">Penso em você, mesmo sabendo o quão longe está de mim.</div>
+        <div class="item">Como queria tu aqui</div>
+        <div class="item">10 minutos refletindo</div>
+        <div class="item">Futilidade</div>
+        <div class="item">Ela não precisa</div>
+        <div class="item">Ela não precisa</div>
+
+
+    </div>
+
+    <h3>space between</h3>
+    <div class="container spacebetween">
+        <div class="item">Observo a noite fria e chuvosa, até parece confortávela</div>
+        <div class="item">Mais uma noite como todas as anteriores.</div>
+        <div class="item">Penso em você, mesmo sabendo o quão longe está de mim.</div>
+        <div class="item">Como queria tu aqui</div>
+        <div class="item">10 minutos refletindo</div>
+        <div class="item">Futilidade</div>
+        <div class="item">Ela não precisa</div>
+        <div class="item">Ela não precisa</div>
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 400px;
+            border: 1px solid black;
+        }
+
+        .item {
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            font-size: 24px;
+
+        }
+
+        .flex-1{
+            flex: 1; /* Grow = 1, Shrink = 1 e Basis = 0.*/
+        }
+
+        .flex-2{
+            flex: 2; /* Grow = 2, Shrink = 1 e Basis = 0.*/
+        }
+
+        .width{
+            width: 200px; /*Como a propriedade flex-1 tem o basis = 0 o width é ignorado, se você usar um min-width: 200px; por exemplo, aí sim ele vai tentar atender*/
+        }
+
+        
+
+    </style>
+</head>
+<body>
+        <h3>flex-1</h3>
+    <div class="container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">BBB</div>
+        <div class="item flex-1">CC</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">EF</div>
+       
+    </div>
+
+
+    <h3>flex-mix</h3>
+<div class="container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-2">BBB</div>
+    <div class="item flex-2">CC</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">EF</div>
+   
+</div>
+
+    <h3>no Width = basis = 0</h3>
+    <div class="container">
+        <div class="item flex-1 width">A</div>
+        <div class="item flex-1 width">BBB</div>
+        <div class="item flex-1 width">CC</div>
+        <div class="item flex-1 width">D</div>
+        <div class="item flex-1 width">EF</div>
+    
+    </div>
+
+</body>
+</html>
